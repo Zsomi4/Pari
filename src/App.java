@@ -9,9 +9,12 @@ public class App {
     public static void readFile() throws FileNotFoundException {
         FileReader fr = new FileReader("adat.txt");
         Scanner scan = new Scanner(fr);
+        int counter = 0;
         while(scan.hasNextLine()) {
             String lines = scan.nextLine();
-            System.out.println(lines);
+            //System.out.println(lines);
+            counter++;
         }
+        System.out.println(counter);
     }
 }
